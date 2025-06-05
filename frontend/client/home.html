@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vehicle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.container {
+    background-color: #112941;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.container p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin:auto;
+}
+.container h2 {    
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    animation: forwards 1s ease-in-out;;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font: 1em sans-serif;
+    font-size: 1.8rem;
+    padding: 20px;
+    font-style: italic;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    padding: 40px 0 0 0;
+    background-color: #f4f4f4;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.our-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.our-services li {
+    width: 70%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.our-services h5 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.our-services img {
+   min-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+details {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+summary {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(17, 121, 87);
+    cursor: pointer;
+}
+
+details p {
+    font-size: 0.95rem;
+    color: #282bf0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    color: #777;
+}
+@media screen and (max-width: 768px){
+    .container{
+        padding-top: 15%;
+    }
+    .container h2{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .container p{
+        color:rgb(229, 182, 65);
+
+        font-size: 1.1rem;
+        word-break: break-word;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        padding-left: 9px;
+        padding-right: 5px;
+    }
+    .our-services li {
+        width: 90%;
+    }
+    .our-services li p {
+        font-size: 0.9rem;
+        word-break: break-word;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        padding-left: 9px;
+        padding-right: 5px;
+    }
+}
+</style>
+</head>
+<body>
+ <div class="navigation">
+        <nav class="nav-bar" id="nav-bar">
+            <img class="logo"id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlau7ss4kuWz3N0c8VZ-xvwswfkG74dsouw&s" alt="Logo" style="width: 100px; height: auto;">
+             <li id="menu-icon" class="menu-icon"><i class="fas fa-bars"></i> </li>
+             <ul class="nav-list" id="nav-list">
+                <li><a href="home.html" onclick=""><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+                <li><a href="https://maps.windows.com/?form=WNAMSH&lvl=13.019105&cp=9.056551~38.703045&sty=3d&trfc=1" target="_blank"><i class="fa-solid fa-location-dot"></i>Our Location</a></li>
+                <li><a href="reserve.html"><i class="fas fa-car"></i>Reserve Spot</a></li>
+                <li><a href="login.html"><i class="fas fa-user"></i>Check Your spot</a></li>
+            </ul>
+        </nav>
+ </div>
+    <div class="container" id="container">
+    <div class="h2">
+        <h2>Welcome to Your Smart, Secure, and Safe Vehicle Parking Solution</h2>
+    </div>
+        <p>
+            We are delighted to welcome you to a new era of parking! Our platform offers a smart, secure, and safe parking experience designed to give you peace of mind every time you park. Whether you're looking for a convenient spot or a system that ensures your vehicle’s safety, we've got you covered.
+        </p>
+    </div>
+    <main>
+        <h4>Our Services Are:</h4>
+        <ul class="our-services" id="our-services">
+            <li>
+                <h5>Smart Parking Solution</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EJf1vPwvWMtdoeR12KHBeg4-Je9cKrnZTA&s" alt="Smart Parking Solution">
+                <details>
+                    <summary><strong>Click to see more about Smart Parking Solution</strong></summary>
+                    <p>A smart parking solution uses technology like IoT sensors and real-time data to help drivers find available parking spaces, reducing traffic congestion and emissions. With features such as live updates, automated payments, and dynamic pricing, this system enhances urban parking efficiency and convenience.</p>
+                    <ul>
+                        <li>Real-time parking availability</li>
+                        <li>Automated payment systems</li>
+                        <li>Dynamic pricing based on demand</li>
+                        <li>Environmentally friendly and reduces congestion</li>
+                    </ul>
+                </details>
+            </li>
+            
+            <li>
+                <h5>Secure Vehicle Storage</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EJf1vPwvWMtdoeR12KHBeg4-Je9cKrnZTA&s" alt="Secure Vehicle Storage">
+                <details>
+                    <summary><strong>Click to see more about Secure Vehicle Storage</strong></summary>
+                    <p>Our secure vehicle storage service ensures that your vehicle is protected in a safe and monitored environment. With advanced security features, you can have peace of mind knowing your vehicle is in good hands.</p>
+                    <ul>
+                        <li>24/7 surveillance and monitoring</li>
+                        <li>Climate-controlled units for sensitive vehicles</li>
+                        <li>Advanced access control systems</li>
+                        <li>Insured storage for additional protection</li>
+                    </ul>
+                </details>
+            </li>
+            
+            <li>
+                <h5>Safety Monitoring Systems</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EJf1vPwvWMtdoeR12KHBeg4-Je9cKrnZTA&s" alt="Safety Monitoring Systems">
+                <details>
+                    <summary><strong>Click to see more about Safety Monitoring Systems</strong></summary>
+                    <p>Our safety monitoring systems provide real-time alerts and proactive measures to ensure the safety of your vehicles. Whether you're parking in a garage or using our storage services, we've got you covered with cutting-edge security technology.</p>
+                    <ul>
+                        <li>Real-time monitoring with instant alerts</li>
+                        <li>Motion detection and surveillance cameras</li>
+                        <li>Integrated with other security services</li>
+                        <li>Remote access for vehicle owners</li>
+                    </ul>
+                </details>
+            </li>
+            
+            <li>
+                <h5>24/7 Customer Support</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EJf1vPwvWMtdoeR12KHBeg4-Je9cKrnZTA&s" alt="24/7 Customer Support">
+                <details>
+                    <summary><strong>Click to see more about 24/7 Customer Support</strong></summary>
+                    <p>Our customer support team is available 24/7 to assist you with any inquiries or issues. Whether you need help with parking, vehicle storage, or any of our services, we are just a call away.</p>
+                    <ul>
+                        <li>24/7 phone and online support</li>
+                        <li>Dedicated support for urgent requests</li>
+                        <li>Expert assistance on parking and storage-related issues</li>
+                        <li>Quick response time to ensure customer satisfaction</li>
+                    </ul>
+                </details>
+            </li>
+            
+            <li>
+                <h5>Premium Parking System</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EJf1vPwvWMtdoeR12KHBeg4-Je9cKrnZTA&s" alt="Premium Parking System">
+                <details>
+                    <summary><strong>Click to see more about Premium Parking System</strong></summary>
+                    <p>Our Premium Parking System is designed for those who want extra convenience and luxury. With this service, you can enjoy additional perks such as vehicle care and other personalized services for an enhanced experience.</p>
+                    <ul>
+                        <li>Car washing service</li>
+                        <li>Tire checks and pressure monitoring</li>
+                        <li>Electric vehicle charging station (if applicable)</li>
+                        <li>Priority parking spots</li>
+                        <li>Additional charges for electric and other vehicles</li>
+                        <li><strong>Special Offer:</strong> Use our Premium Parking Service for 14 consecutive days, and get one day of parking free!</li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </main>
+    <footer class="footer" id="footer">
+        <p>© 2025 Vehicle Parking Solutions. All rights reserved.</p>
+    </footer>
+    <script src="NavBar.js"></script>
+</body>
+</html>

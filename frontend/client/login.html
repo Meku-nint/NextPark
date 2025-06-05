@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check your spot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       .check-spot-container {
+           padding-top: 5%;
+       }
+       .page-detail {
+           width: 90%;
+           margin: auto;
+           text-align: center;
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 1.2rem;
+              color: #333;
+              font-style: italic;
+       }
+       form {
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            color: #333;
+            font-style: italic;
+            max-width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form input,button {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+           
+        }
+        form label {
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        @media screen and (max-width: 768px) {
+            form {
+                width: 90%;
+                margin-top: 40px;
+            }
+            form input, button {
+                width: 90%;
+            }
+            .page-detail {
+                font-size: 1rem;
+                text-align: justify;
+            }
+            .page-detail h1 {
+                margin-top: 20%;
+                font-size: 1.7rem;
+            }
+         
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }      
+            
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <nav class="nav-bar" id="nav-bar">
+            <img class="logo"id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlau7ss4kuWz3N0c8VZ-xvwswfkG74dsouw&s" alt="Logo" style="width: 100px; height: auto;">
+             <li id="menu-icon" class="menu-icon"><i class="fas fa-bars"></i> </li>
+             <ul class="nav-list" id="nav-list">
+                <li><a href="home.html" onclick=""><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+                <li><a href="https://maps.windows.com/?form=WNAMSH&lvl=13.019105&cp=9.056551~38.703045&sty=3d&trfc=1" target="_blank"><i class="fa-solid fa-location-dot"></i>Our Location</a></li>
+                <li><a href="reserve.html"><i class="fas fa-car"></i>Reserve Spot</a></li>
+                <li><a href="login.html"><i class="fas fa-user"></i>Check Your spot</a></li>
+            </ul>
+        </nav>
+ </div>
+ <div class="check-spot-container" id="check-spot-container">
+    <div class="page-detail">
+        <h1>Check Your Spot</h1>
+        <p>This login page allows you to check your parking spot status easily. 
+            To get started, simply enter your license plate number, spot number, and unique ID.
+             This will help you quickly verify if your spot is available or already taken. 
+             Make sure to have your details ready for a seamless experience.
+              Your spot information is just a few clicks away!</p>
+    </div>
+    <form id="check-spot-form" onsubmit="checkSpot(event)">
+        <label for ="license_plate">Enter your license plate:</label>
+        <input type="text" id="license_plate" name="license_plate" required placeholder="Enter your license plate">
+        <label for="spot_number">Enter your spot number:</label>
+        <input type="text" id="spot_number" name="spot_number" required placeholder="Enter your spot number">
+        <label for="id">Unique ID:</label>
+        <input type="text" id="id" name="id" required placeholder="Enter your unique ID">
+        <button >Check</button>
+
+    </form>
+ </div>
+ <footer class="footer" id="footer">
+    <p>© 2025 Vehicle Parking Solutions. All rights reserved.</p>
+</footer>
+<script src="NavBar.js"></script>
+</body>
+<script >
+    async function checkSpot(e){
+        e.preventDefault();
+        const formData = new FormData(e.target.value);
+        console.log(formData);
+    }
+</script>
+</html>
