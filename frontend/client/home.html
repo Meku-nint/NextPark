@@ -146,11 +146,26 @@ ul li {
     }
       
 }
- #map {
-      height: 500px;
-      width: 90%;
-      margin: auto;
-    }
+.search-map {
+    display: flex;
+}
+.search-map .option {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f4f4f4;
+  
+}
+.search-map .option li{
+  list-style-type: disc;
+  text-underline-position: none;
+}
+.map {
+    width: 100%;
+    height: 500px;
+    margin: 20px 20px 0 0;
+}
 </style>
 </head>
 <body>
@@ -161,8 +176,7 @@ ul li {
              <ul class="nav-list" id="nav-list">
                 <li><a href="home.html" onclick=""><i class="fas fa-home"></i>Home</a></li>
                 <li><a href="contact.html"><i class="fas fa-phone"></i>Contact</a></li>
-                <li><a href="https://maps.windows.com/?form=WNAMSH&lvl=13.019105&cp=9.056551~38.703045&sty=3d&trfc=1" target="_blank"><i class="fa-solid fa-location-dot"></i>Our Location</a></li>
-                <li><a href="reserve.html"><i class="fas fa-car"></i>Reserve Spot</a></li>
+           <!--    <li><a href="reserve.html"><i class="fas fa-car"></i>Reserve Spot</a></li>--> 
                 <li><a href="login.html"><i class="fas fa-user"></i>Check Your spot</a></li>
             </ul>
         </nav>
@@ -176,12 +190,24 @@ ul li {
         </p>
     </div>
     <script src="NavBar.js"></script>
-<div id="map">Loading map...</div>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+ <div class="search-map">
+    <div class="option">
+      <input type="search" placeholder="Search parking area">
+      <ul>
+        <li>Piassa Parking</li>
+        <li>Piassa Parking</li>
+        <li>Piassa Parking</li>
+        <li>bole parking</li>
 
+      </ul>
+    </div>
+    <div id="map" class="map"> map loading ...</div>
+  </div>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 <script>
+ 
   const map = L.map('map').setView([9.03, 38.74], 13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
@@ -198,6 +224,7 @@ ul li {
     marker.bindPopup(`
       <strong>${spot.name}</strong><br>
       <button onclick="showRoute(${spot.lat}, ${spot.lng})">Want to Go</button>
+      <a href="reserve.html">reserve spot</a>
     `);
   });
   if (navigator.geolocation) {
